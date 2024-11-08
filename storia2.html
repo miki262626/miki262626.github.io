@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="calc.css">
+    
+    </head>
+    <style> 
+        h1{
+            font-family: 'Courier New';
+        }
+    </style>
+
+
+   
+    <body> 
+        <h1>FRUTTO E UTILIZZO</h1>
+
+        <script>
+            function visitPage(){
+                window.location="calc.html";
+            
+            }
+            
+            function aggiornaOrologio() {
+            
+            var now = new Date();
+
+            var ore = now.getHours();
+            var minuti = now.getMinutes();
+            var secondi = now.getSeconds();
+   
+            document.getElementById("orologio").innerHTML = ore + ":" + minuti + ":" + secondi;
+        }
+        setInterval(aggiornaOrologio, 1000);     
+        aggiornaOrologio();
+        </script>
+
+        <div class="riqu">
+            <button 
+            onclick="visitPage();">
+            torna homepage
+            </button>
+        </div>
+        
+       
+        <img src="ciliegie.jpg" alt="CILIEGIA" width="300"  >
+        <img src="https://images.unsplash.com/photo-1528820540591-4d090b2f6e3c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ciliegia" width="300"  >
+
+
+
+        <p>
+            Il frutto di ciliegio &#232 una drupa carnosa dalle dimensioni di media di 1-2 cm di diametro, anche se dipende dalla specie. Il colore varia a seconda della maturazione, partendo dal giallastro, passando al rossastro e arrivando anche al violaceo nei casi di maturit&#224 inoltrata, la quale avviene intorno a giungo. Il frutto commestibile possiede un nocciolo al cui interno &#232 presente un seme che &#232 lungo 6-8 mm, non commesitibile in quanto tossico. Il legno del ciliegio &#232 rinomato per il pregio che gli conferisce un buon valore economico. Il ciliegio &#232 ottimo nel settore dell'industria mobiliera. Inoltre, il legno possiede buone qualit&#224 meccaniche ed estetiche, tuttavia presenta un seccaggio elevato e tavlvola &#232 fibroso.
+        </p>
+       
+        <div id="orologio"></div>
+
+    </body>
+</html>

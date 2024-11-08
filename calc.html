@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <link rel="stylesheet" href="calc.css">
+
+</head>
+
+<title>ALBERO</title>
+
+<body>
+
+<style>
+
+
+    h1{
+        font-family: Georgia;
+        font-size:38px;
+        width: 1400px;
+        height: 65px;
+        border: 2px solid rgb(0, 0, 0);
+        padding:65;
+        text-align: center;
+        background-color: rgba(5, 94, 5, 0.522);
+    }
+
+</style>
+
+<div>
+        <h1>CILIEGIO (ALBERO)</h1>
+</div>
+<p> 
+    Collegamento ad altre Informazioni: <a href="storia.html"> Storia dell'albero</a> o  <a href="storia2.html"> Frutto</a>
+</p>
+<div class="img">
+
+
+    <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="foto" width="300"  class="rot">   
+    
+    <img src="albero_c.jpg" alt="albero" width="300" >   
+
+</div>
+
+<p >
+    L'albero di ciliegio,conosciuto anche come Prunus avium (dal latino Ciliegio degli uccelli), &#232 un albero caducifoglie e latifoglie, la cui crescita va dai 15 ai 32 metri di altezza circa. Vive approsimativamente 100 anni e  richiede molta luce per crescere. Il riconoscimento della pianta avviene tramite le foglie che sono dotate dei nettari, piccole ghiandole rosse, che sono situate alla base. Le foglie, che sono caduche oblunche, dentate e pubescenti, sono lunghe dai 7 ai 14 cm e larghe dai4 ai 7 cm e, anche le punte, sono dotate di una ghiandola rossa. Nella stagione autunnale diventano rosse, arancioni o rosa.
+
+    
+    
+</p>
+
+<div id="orologio"></div>
+
+
+<script> 
+function aggiornaOrologio() {
+            
+            var now = new Date();
+
+            
+            var ore = now.getHours();
+            var minuti = now.getMinutes();
+            var secondi = now.getSeconds();
+
+            
+            document.getElementById("orologio").innerHTML = ore + ":" + minuti + ":" + secondi;
+        }
+
+       
+        setInterval(aggiornaOrologio, 1000);
+
+        
+        aggiornaOrologio();
+
+</script>
+
+</body>
+</html>

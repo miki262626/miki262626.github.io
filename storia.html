@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="calc.css">
+    
+    </head>
+
+    <body> 
+
+        <style> 
+            h1{
+                font-family: 'Brush Script MT';
+            }
+        </style>
+        <h1>STORIA</h1>
+
+        <script>
+            function visitPage(){
+                window.location="calc.html";
+                btn.style.position = 'absolute';
+            }
+        </script>
+
+
+        <div class="riqu">
+            <button 
+            onclick="visitPage();">TORNA HOMPAGE
+            </button>
+        </div>
+        
+       
+        <img src="colosseo.jpg" alt="colosseo" width="300"  >
+
+        <img src="https://images.unsplash.com/photo-1697455621132-54e02163045b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="greci" width="300"  >
+        
+        <p>
+             Le prime prove storiche che testimoniano la coltivazione di questo frutto suggeriscono che fu inizato a coltivare all'incirca 3000/4000 nelle zone della Mesopotamia e altre regioni del Medio Oriente. Anche nell'antica Grecia, viene testimoniato il consumo di tale frutto da Plinio il Vecchio, che, nell'opera Naturalis Historia, racconta di come questo frutto viene apprezzato dai Greci e di come fu poi esportato a Roma dalla citt&#224 turca Cerasus. Per quanto riguarda i secoli del Medioevo, il frutto continua a essere diffuso e a essere usato come ingredeinte per la preparazione di alcuni dolci. La diffusione globale avviene con l'esportazione del frutto nelle prime colonie Americane nel XVI secolo
+        </p>
+
+        <div id="orologio"></div>
+        
+        <script>
+            function aggiornaOrologio() {
+            
+            var now = new Date();
+
+            
+            var ore = now.getHours();
+            var minuti = now.getMinutes();
+            var secondi = now.getSeconds();
+
+            
+            document.getElementById("orologio").innerHTML = ore + ":" + minuti + ":" + secondi;
+        }
+
+       
+        setInterval(aggiornaOrologio, 1000);
+
+        
+        aggiornaOrologio();
+        </script>
+
+
+    </body>
+</html>
